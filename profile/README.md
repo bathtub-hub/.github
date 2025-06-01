@@ -1,4 +1,4 @@
-# bathtub-hub 🛁🐥
+# 🛁 bathtub-hub 🐥
 
 _Empowering researchers and industry in Brazil's energy and climate sectors by integrating, standardizing, and simplifying access to complex, multi-source data._
 
