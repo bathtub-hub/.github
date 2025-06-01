@@ -1,6 +1,6 @@
-# 🚿 bathtub-hub 🌊
+# bathtub-hub 🛁🐥
 
-*Empowering researchers and industry in Brazil's energy and climate sectors by integrating, standardizing, and simplifying access to complex, multi-source data.*
+_Empowering researchers and industry in Brazil's energy and climate sectors by integrating, standardizing, and simplifying access to complex, multi-source data._
 
 ---
 
@@ -26,11 +26,13 @@ Gathering reliable and standardized energy and climate data in Brazil is notorio
 We use a structured, layered data lake approach on AWS S3, leveraging modern cloud-native tools:
 
 ### 📂 Data Lake Layers:
+
 - **Bronze (`bronze/`)**: Raw data, provider-specific.
 - **Silver (`silver/`)**: Cleaned, normalized data stored as Iceberg tables, provider-specific.
 - **Gold (`gold/`)**: Curated, aggregated, and enriched data, domain-specific.
 
 ### ☁️ AWS Cloud Components:
+
 - **Storage**: Multiple AWS S3 buckets (bronze, silver, gold).
 - **Catalog**: AWS Glue Data Catalog.
 - **Tables**: Apache Iceberg tables managed through AWS Athena.
@@ -42,13 +44,13 @@ We use a structured, layered data lake approach on AWS S3, leveraging modern clo
 
 The **bathtub-hub** organization is divided into modular repositories for better maintainability and scalability:
 
-| Repo Name               | Description                                                   |
-|-------------------------|---------------------------------------------------------------|
-| **[`infra`](#)**        | Infrastructure-as-code (Terraform modules, AWS resources).    |
-| **[`catalog`](#)**      | Dataset metadata, schema contracts, validation rules.         |
-| **[`pipelines-core`](#)** | Core reusable libraries (ETL logic, schema validators).       |
-| **[`ingest-<provider>`](#)** | Provider-specific ingestion logic (ONS, ANEEL, INMET, etc.).|
-| **[`jobs-curated`](#)** | Domain-specific transformations (energy, climate, forecasts). |
+| Repo Name                    | Description                                                   |
+| ---------------------------- | ------------------------------------------------------------- |
+| **[`infra`](#)**             | Infrastructure-as-code (Terraform modules, AWS resources).    |
+| **[`catalog`](#)**           | Dataset metadata, schema contracts, validation rules.         |
+| **[`pipelines-core`](#)**    | Core reusable libraries (ETL logic, schema validators).       |
+| **[`ingest-<provider>`](#)** | Provider-specific ingestion logic (ONS, ANEEL, INMET, etc.).  |
+| **[`jobs-curated`](#)**      | Domain-specific transformations (energy, climate, forecasts). |
 
 Each repository includes its own documentation (`README.md`) covering:
 
@@ -73,6 +75,7 @@ We warmly welcome community and industry contributions! Here’s how you can get
 ### ✅ Contribution Standards:
 
 - **Integration**:
+
   - Iceberg tables
   - AWS Glue Catalog integration
   - Layered architecture (`bronze/`, `silver/`, `gold/`)
@@ -146,4 +149,4 @@ Under the following terms:
 
 Together, let’s simplify data access and empower research and innovation in the Brazilian energy and climate sectors.
 
-*Happy data bathing!* 🛁🌊
+_Happy data bathing!_ 🛁🌊
